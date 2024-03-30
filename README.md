@@ -1,3 +1,5 @@
+环境配置请查看群文件hello word环境配置
+
 motor.c : 
 电机使能Enable_Motors
 舵电机控制GM6020_Tx
