@@ -8,7 +8,7 @@ SW == stearing wheel == 舵轮
 while(expA-truA> PI){ expA-=PI*2;}
 while(expA-truA<-PI){ expA+=PI*2;}
 
-#反转处理
+//反转处理
 if(expA-truA > PI/2){
 	expA-=PI;
 	SW_Direction[i] *= -1;
