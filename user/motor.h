@@ -1,3 +1,8 @@
+/*
+对电机控制和数据的一层封装
+控制：调用Tx函数
+数据：include .h文件，直接使用被extern出去的全局变量
+*/
 #ifndef _MOTOR_H_
 #define _MOROR_H_
 
@@ -10,8 +15,8 @@ extern "C" {
 #include "stm32f4xx_hal.h"
 
 struct gm6020_data_t {
-  //int16_t raw_angle_buff; //0-8191,用于过零处理
-  //float old_velocity; //rad/s,用于均值滤波
+  //int16_t raw_angle_buff; //0-8191,可用于过零处理
+  //float old_velocity; //rad/s,可用于均值滤波
   
   //int32_t Circle; //转动圈数
   float RealaAngle; //相对角度

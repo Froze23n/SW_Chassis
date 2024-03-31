@@ -107,7 +107,7 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   MCU_BeepUp(); //蜂鸣器响一下
-  Dbus_Init(); //开启遥控器dbus接收 这个函数抄的本部Hello World 看不懂不要紧
+  Dbus_Init(); //开启遥控器dbus接收 这个是抄的本部Hello World 看不懂不要紧
   Enable_Motors(); //使能CAN通讯，使能接收中断，使能中断控制
   while (1)
   {
